@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "bump": "lerna version",
+    "release:next": "lerna publish --bump=prerelease",
+    "release:canary": "lerna publish --canary --yes",
     "release": "lerna publish --from-package",
     "build": "tsc",
     "watch": "tsc --watch",
