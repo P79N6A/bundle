@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@hardfist/bundle@^1.1.1-alpha.0":
-  version "1.1.1-alpha.0"
-  resolved "https://registry.yarnpkg.com/@hardfist/bundle/-/bundle-1.1.1-alpha.0.tgz#e4dae7d4050cc565f2731ee5fade3c81f486319c"
-  integrity sha512-tikYE5oI7NIxKuPgU0mvm1c8OTGktsxMx6QqBHuWe5prn5pHHQMn33ryLZ3CRLj7UyXQTpXd/Oi6ZV7JdBItwQ==
+"@hardfist/bundle@^1.1.1@latest":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@hardfist/bundle/-/bundle-1.1.2.tgz#146f53394b60b7bd632cfe96a77b6172563041e2"
+  integrity sha512-QpV6SNYOmzcdzVHVhjNb9FlYgV7TJsY3KpT9Zkxwy8HvNEOtNhCqntzjxgmnUPmSezEZCwp8prBMNn4tQdoxMA==
   dependencies:
     commander "^2.20.0"
 
