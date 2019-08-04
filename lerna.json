@@ -1,6 +1,8 @@
 {
-  "packages": ["./"],
-  "version": "1.0.0",
+  "packages": [
+    "./"
+  ],
+  "version": "1.0.1",
   "npmClient": "yarn",
   "command": {
     "version": {
