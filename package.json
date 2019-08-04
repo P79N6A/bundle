@@ -3,6 +3,9 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "bundle": "bin/cli"
+  },
   "scripts": {
     "bump": "lerna version",
     "release:next": "lerna publish --bump=prerelease",

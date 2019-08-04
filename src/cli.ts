@@ -1,4 +1,6 @@
 import program from 'commander';
+import { version } from '../package.json';
+console.log('version:', version);
 
 program.version('0.0.1')
 .description('Facke package manager')

@@ -1,0 +1,36 @@
+{
+    "name": "@hardfist/bundle",
+    "version": "1.1.0",
+    "description": "",
+    "main": "index.js",
+    "bin": {
+        "bundle": "bin/cli"
+    },
+    "scripts": {
+        "bump": "lerna version",
+        "release:next": "lerna publish --bump=prerelease",
+        "release:canary": "lerna publish --canary --yes",
+        "release": "lerna publish --from-package",
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "test": "node ./bin/cli.js"
+    },
+    "repository": "git+https://github.com/monorepo-lab/bundle.git",
+    "keywords": [],
+    "author": "yangjian.fe <yangjian.fe@bytedance.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/monorepo-lab/bundle/issues"
+    },
+    "homepage": "https://github.com/monorepo-lab/bundle#readme",
+    "devDependencies": {
+        "@types/node": "^12.6.9",
+        "typescript": "^3.5.3"
+    },
+    "dependencies": {
+        "commander": "^2.20.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
