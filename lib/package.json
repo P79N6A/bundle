@@ -1,8 +1,11 @@
 {
     "name": "@hardfist/bundle",
-    "version": "1.1.1-alpha.0",
+    "version": "1.1.1-alpha.1",
     "description": "",
     "main": "index.js",
+    "bin": {
+        "bundle": "./bin/cli.js"
+    },
     "scripts": {
         "bump": "lerna version",
         "release:next": "lerna publish --bump=prerelease",
@@ -29,5 +32,10 @@
     },
     "publishConfig": {
         "access": "public"
-    }
+    },
+    "files": [
+        "lib",
+        "bin",
+        "src"
+    ]
 }
