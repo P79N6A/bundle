@@ -1,8 +1,6 @@
+import path from 'path';
 import babel from "./lib/babel";
 import tsc from "./lib/tsc";
-import babelESMConfig from "./config/babel.esm";
-import babelCJSConfig from "./config/babel.cjs";
-import babelModernConfig from "./config/babel.modern";
 import tsConfig from "./config/tsconfig.json";
 import program from "commander";
 
@@ -25,10 +23,15 @@ program
     await babel({
       buildOptions: { ...opts, outDir: "dist/esm" },
       babelOptions: {
-        ...babelESMConfig,
-        sourceMaps: opts.sourceMaps
+        configFile: path.join(__dirname, './config/babel.esm.js')
       }
     });
+    await babel({
+      buildOptions: {...opts, outDir: 'dist/cjs'},
+      babelOptions: {
+        configFile: path.join(__dirname, './config/babel.cjs.js')
+      }
+    })
   })
   .parse(process.argv);
 

@@ -11,8 +11,8 @@
     "release:next": "lerna publish --bump=prerelease",
     "release:canary": "lerna publish --canary --yes",
     "release": "lerna publish --from-package",
-    "build": "tsc",
-    "watch": "tsc --watch",
+    "build": "babel src  --copy-files --out-dir lib --ignore src/**/*.d.ts --delete-dir-on-start --extensions '.ts,.tsx,.js,.jsx'",
+    "watch": "babel src  --watch --copy-files --out-dir lib --ignore src/**/*.d.ts --delete-dir-on-start --extensions '.ts,.tsx,.js,.jsx'",
     "test": "node ./bin/cli.js",
     "clean": "rimraf {lib,dist}"
   },
@@ -36,6 +36,7 @@
     "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-typescript": "^7.3.3",
+    "@babel/runtime": "^7.5.5",
     "@types/babel__core": "^7.1.2",
     "@types/commander": "^2.12.2",
     "@types/fs-extra": "^8.0.0",
