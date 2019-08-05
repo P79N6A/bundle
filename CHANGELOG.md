@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/monorepo-lab/bundle/compare/v1.1.2...v1.2.0) (2019-08-05)
+
+
+### Bug Fixes
+
+* fix sub command ([38903ae](https://github.com/monorepo-lab/bundle/commit/38903ae))
+
+
+### Features
+
+* add version ([2083420](https://github.com/monorepo-lab/bundle/commit/2083420))
+
+
+
+
+
+# [1.2.0](https://github.com/monorepo-lab/bundle/compare/v1.1.2...v1.2.0) (2019-08-05)
+
+
+### Bug Fixes
+
+* fix sub command ([38903ae](https://github.com/monorepo-lab/bundle/commit/38903ae))
+
+
+### Features
+
+* add version ([2083420](https://github.com/monorepo-lab/bundle/commit/2083420))
+
+
+
+
+
 ## [1.1.1](https://github.com/monorepo-lab/bundle/compare/v1.1.1-alpha.2...v1.1.1) (2019-08-04)
 
 
