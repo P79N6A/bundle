@@ -13,7 +13,8 @@
     "release": "lerna publish --from-package",
     "build": "tsc",
     "watch": "tsc --watch",
-    "test": "node ./bin/cli.js"
+    "test": "node ./bin/cli.js",
+    "clean": "rimraf lib"
   },
   "repository": "git+https://github.com/monorepo-lab/bundle.git",
   "keywords": [],
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/monorepo-lab/bundle#readme",
   "devDependencies": {
     "@types/node": "^12.6.9",
+    "rimraf": "^2.6.3",
     "typescript": "^3.5.3"
   },
   "dependencies": {
